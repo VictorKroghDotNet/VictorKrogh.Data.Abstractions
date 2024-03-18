@@ -17,4 +17,8 @@
 		<PackageVersion>8.0.$(BuildNumber)</PackageVersion>
 	</PropertyGroup>
 
+	<PropertyGroup>
+		<PackageProjectUrl>https://github.com/VictorKroghDotNet/VictorKrogh.Data.Abstractions</PackageProjectUrl>
+	</PropertyGroup>
+
 </Project>
