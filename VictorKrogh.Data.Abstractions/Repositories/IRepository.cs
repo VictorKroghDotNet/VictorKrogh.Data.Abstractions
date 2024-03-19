@@ -23,7 +23,7 @@ public interface IReadOnlyRepository<TModel> : IRepository<TModel>
     where TModel : class
 {
     ValueTask<TModel?> GetFirstOrDefaultAsync();
-    ValueTask<IEnumerable<TModel>> GetAsync();
+    ValueTask<IEnumerable<TModel?>> GetAsync();
 }
 
 public interface IReadOnlyRepository<TModel, TKey1> : IRepository<TModel>
