@@ -26,7 +26,7 @@ public interface IReadOnlyRepository<TModel> : IRepository<TModel>
     ValueTask<IEnumerable<TModel?>> GetAsync();
 }
 
-public interface IReadOnlyRepository<TModel, TKey1> : IRepository<TModel>
+public interface IReadOnlyRepository<TModel, TKey1> : IReadOnlyRepository<TModel>
     where TModel : class
     where TKey1 : notnull
 {
